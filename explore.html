@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explore</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="app.js"></script>
+  </head>
+  <body class="exploreContent">
+        <main>
+            <h1>GENERAL OVERVIEW</h1> 
+            <button>flip sides</button>
+            <!-- Control buttons -->
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cars')"> Korean Food</button>
+                <button class="btn" onclick="filterSelection('animals')"> Chinese Food</button>
+                <button class="btn" onclick="filterSelection('fruits')"> Herbal Medicine</button>
+                <button class="btn" onclick="filterSelection('colors')"> Convenience Stores</button>
+                <button class="btn" onclick="filterSelection('colors')"> Hotels</button>
+                <button class="btn" onclick="filterSelection('colors')"> Entertainment</button>
+                <button class="btn" onclick="filterSelection('colors')"> North Korean Goods</button>
+                <button class="btn" onclick="filterSelection('colors')"> South Korean Goods</button>
+                <button class="btn" onclick="filterSelection('colors')"> Japanese Goods</button>
+                <button class="btn" onclick="filterSelection('colors')"> Health Services</button>
+                <button class="btn" onclick="filterSelection('colors')"> Car Parts</button>
+                <button class="btn" onclick="filterSelection('colors')"> Fruit</button>
+                <button class="btn" onclick="filterSelection('colors')"> Spa</button>
+                <button class="btn" onclick="filterSelection('colors')"> Education</button>
+                <button class="btn" onclick="filterSelection('colors')"> Photography Studio</button>
+            </div>
+            
+            <button>link to excel sheet data</button>
+            <p>All rights reserved 2024</p>
+        </main>
+        <div class="images">
+            <div class="year2024">
+                <h4>2024</h4>
+                <div class="tooltip">Hover over me
+                    <span class="tooltiptext">Tooltip text</span>
+                </div>
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                <div class="container">
+                    <div class="filterDiv cars">BMW</div>
+                    <div class="filterDiv colors fruits">Orange</div>
+                    <div class="filterDiv cars">Volvo</div>
+                    <div class="filterDiv colors">Red</div>
+                    <div class="filterDiv cars">Ford</div>
+                    <div class="filterDiv colors">Blue</div>
+                    <div class="filterDiv animals">Cat</div>
+                    <div class="filterDiv animals">Dog</div>
+                    <div class="filterDiv fruits">Melon</div>
+                    <div class="filterDiv fruits animals">Kiwi</div>
+                    <div class="filterDiv fruits">Banana</div>
+                    <div class="filterDiv fruits">Lemon</div>
+                    <div class="filterDiv animals">Cow</div>
+                </div>
+            </div>
+            <div class="year2018">
+                <h4>2018</h4>
+                <div class="tooltip">Hover over me
+                    <span class="tooltiptext">Tooltip text</span>
+                </div>
+            </div>
+            <div class="year2016">
+                <h4>2016</h4>
+                <div class="tooltip">Hover over me
+                    <span class="tooltiptext">Tooltip text</span>
+                </div>
+            </div>
+            <div class="year2014">
+                <h4>2014</h4>
+                <div class="tooltip">Hover over me
+                    <span class="tooltiptext">Tooltip text</span>
+                </div>
+            </div>
+        </div>
+  </body>
+</html>
