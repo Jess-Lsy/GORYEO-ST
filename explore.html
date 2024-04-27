@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Explore</title>
+    <title>Comparing Views</title>
     <link rel="stylesheet" href="style.css">
 	<script src="app.js"></script>
   </head>
   <body class="exploreContent">
         <main>
-            <h1>GENERAL OVERVIEW</h1> 
+            <h1>COMPARING VIEWS</h1> 
             <button>flip sides</button>
             <!-- Control buttons -->
             <div id="myBtnContainer">
@@ -32,33 +32,38 @@
                 <button class="btn" onclick="filterSelection('colors')"> Photography Studio(1)</button>
             </div>
             
-            <button>link to excel sheet data</button>
+            <a href="https://docs.google.com/spreadsheets/d/12GcoYwcWFGo7bCCvUrZF2RYN6TzOqqGaWAJ_weATkCg/edit#gid=1852347668" class="btn" target=”_blank” >link to excel sheet data</a>
             <p>All rights reserved 2024</p>
         </main>
-        <div class="images">
-            <div class="year2024">
-                <h4>2024</h4>
-                <div class="tooltip">Hover over me
+        <div class="exploreImages">
+            <div class="images">
+                <div class="accordian">
+                    <input type="checkbox" id="trigger"/>
+                    <label for="trigger">2024</label>
+                    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                    <div class="container">
+                            <img src="img/2024ISP_01 justsign.png" style="max-height: 800px;">
+                            <img src="img/2024ISP_08_justsign.png" style="max-height: 700px; padding-top: 230px;">
+                            <img src="img/2024ISP_09_justsigns.png" style="max-height: 700px; padding-top: 350px;">
+                        <!-- <div class="filterDiv cars">BMW</div>
+                        <div class="filterDiv colors fruits">Orange</div>
+                        <div class="filterDiv cars">Volvo</div>
+                        <div class="filterDiv colors">Red</div>
+                        <div class="filterDiv cars">Ford</div>
+                        <div class="filterDiv colors">Blue</div>
+                        <div class="filterDiv animals">Cat</div>
+                        <div class="filterDiv animals">Dog</div>
+                        <div class="filterDiv fruits">Melon</div>
+                        <div class="filterDiv fruits animals">Kiwi</div>
+                        <div class="filterDiv fruits">Banana</div>
+                        <div class="filterDiv fruits">Lemon</div>
+                        <div class="filterDiv animals">Cow</div> -->
+                    </div>
+                <!-- <div class="tooltip">Hover over me
                     <span class="tooltiptext">Tooltip text</span>
+                </div> -->
                 </div>
-                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-                <div class="container">
-                    <div class="filterDiv cars">BMW</div>
-                    <div class="filterDiv colors fruits">Orange</div>
-                    <div class="filterDiv cars">Volvo</div>
-                    <div class="filterDiv colors">Red</div>
-                    <div class="filterDiv cars">Ford</div>
-                    <div class="filterDiv colors">Blue</div>
-                    <div class="filterDiv animals">Cat</div>
-                    <div class="filterDiv animals">Dog</div>
-                    <div class="filterDiv fruits">Melon</div>
-                    <div class="filterDiv fruits animals">Kiwi</div>
-                    <div class="filterDiv fruits">Banana</div>
-                    <div class="filterDiv fruits">Lemon</div>
-                    <div class="filterDiv animals">Cow</div>
-                </div>
-            </div>
-            <div class="year2018">
+            <!-- <div class="year2018">
                 <h4>2018</h4>
                 <div class="tooltip">Hover over me
                     <span class="tooltiptext">Tooltip text</span>
@@ -75,7 +80,44 @@
                 <div class="tooltip">Hover over me
                     <span class="tooltiptext">Tooltip text</span>
                 </div>
+            </div> -->
+        </div>
+        <div class="images">
+            <div class="accordian">
+                <input type="checkbox" id="trigger"/>
+                <label for="trigger">2018</label>
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                <div class="container">
+                        <img src="img/2024ISP_01 justsign.png" style="max-height: 1200px;">
+                        <img src="img/2024ISP_08_justsign.png" style="max-height: 700px; padding-top: 230px;">
+                        <img src="img/2024ISP_09_justsigns.png" style="max-height: 700px; padding-top: 350px;">
+                </div>
             </div>
+        </div>
+        <div class="images">
+            <div class="accordian">
+                <input type="checkbox" id="trigger"/>
+                <label for="trigger">2016</label>
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                <div class="container">
+                        <img src="img/2024ISP_01 justsign.png" style="max-height: 1200px;">
+                        <img src="img/2024ISP_08_justsign.png" style="max-height: 700px; padding-top: 230px;">
+                        <img src="img/2024ISP_09_justsigns.png" style="max-height: 700px; padding-top: 350px;">
+                </div>
+            </div>
+        </div>
+        <div class="images">
+            <div class="accordian">
+                <input type="checkbox" id="trigger"/>
+                <label for="trigger">2014</label>
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                <div class="container">
+                        <img src="img/2024ISP_01 justsign.png" style="max-height: 1200px;">
+                        <img src="img/2024ISP_08_justsign.png" style="max-height: 700px; padding-top: 230px;">
+                        <img src="img/2024ISP_09_justsigns.png" style="max-height: 700px; padding-top: 350px;">
+                </div>
+            </div>
+        </div>
         </div>
   </body>
 </html>
