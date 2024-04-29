@@ -11,8 +11,10 @@
   <body class="exploreContent">
         <main>
             <h1>COMPARING VIEWS</h1> 
-            <button>flip sides</button>
+            <h4 style="text-align: left; max-width: 23vw; font-weight: 100; line-height: 1;">An archive of all the signs collected, read more about them <a href="/index.html" target=”_blank”>here</a></h4>
+            <!-- <button class="btn">flip sides</button> -->
             <!-- Control buttons -->
+            <h3 style="padding-top: 50px;">Filters</h3>
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all(100)</button>
                 <button class="btn" onclick="filterSelection('cars')"> Korean Food(1)</button>
@@ -32,92 +34,118 @@
                 <button class="btn" onclick="filterSelection('colors')"> Photography Studio(1)</button>
             </div>
             
-            <a href="https://docs.google.com/spreadsheets/d/12GcoYwcWFGo7bCCvUrZF2RYN6TzOqqGaWAJ_weATkCg/edit#gid=1852347668" class="btn" target=”_blank” >link to excel sheet data</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTx8TlV8efTmdR7wmjSN7FSX9aAyOmfSyl8i8TIf7U5Zn-ah6fjusprt6erR1lJCkOAeSQ0kcEVyqaE/pubhtml" class="btn" target=”_blank” style="margin-top: 200px;">link to data table</a>
             <p>All rights reserved 2024</p>
         </main>
+        
         <div class="exploreImages">
-            <div class="images">
-                <div class="accordian">
-                    <input type="checkbox" id="trigger"/>
-                    <label for="trigger">2024</label>
-                    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-                    <div class="container">
-                            <img src="img/2024ISP_01 justsign.png" style="max-height: 800px;">
-                            <img src="img/2024ISP_08_justsign.png" style="max-height: 700px; padding-top: 230px;">
-                            <img src="img/2024ISP_09_justsigns.png" style="max-height: 700px; padding-top: 350px;">
-                        <!-- <div class="filterDiv cars">BMW</div>
-                        <div class="filterDiv colors fruits">Orange</div>
-                        <div class="filterDiv cars">Volvo</div>
-                        <div class="filterDiv colors">Red</div>
-                        <div class="filterDiv cars">Ford</div>
-                        <div class="filterDiv colors">Blue</div>
-                        <div class="filterDiv animals">Cat</div>
-                        <div class="filterDiv animals">Dog</div>
-                        <div class="filterDiv fruits">Melon</div>
-                        <div class="filterDiv fruits animals">Kiwi</div>
-                        <div class="filterDiv fruits">Banana</div>
-                        <div class="filterDiv fruits">Lemon</div>
-                        <div class="filterDiv animals">Cow</div> -->
+            <style>
+                .accordion {
+                background-color: black;
+                  color: white;
+                  cursor: pointer;
+                  padding: 18px;
+                  width: 100%;
+                  border: none;
+                  text-align: left;
+                  outline: none;
+                  font-size: 15px;
+                  transition: 0.4s;
+                  border: 2px dotted white;
+                }
+                
+                .active, .accordion:hover {
+                  border: 2px dotted #08c708;
+                  color: #08c708;
+                }
+                
+                .panel {
+                  padding: 0 18px;
+                  display: none;
+                  background-color: #08c708;
+                  overflow: hidden;
+                }
+
+                div.scroll {
+                display: flex;
+                align-items: flex-start;
+                margin: 4px, 4px;
+                padding: 4px;
+                background-color: #08c708;
+                width: 75vw;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                }
+            </style>
+                
+            <button class="accordion">2024</button>
+                <div class="panel">
+                  <div class="scroll">
+                    <div class="tooltip">HOVER HERE
+                        <span class="tooltiptext">
+                            <h2 style="max-width: 500px;">Text: "成山轮胎/Cheng Shan/PCR/丹东浚恒贸易有限公司 TEL 전화"</h2>
+                            <h2 style="max-width: 500px;">Shop Name: Cheng Shan Tires</h2>
+                            <h2 style="max-width: 500px;">Chinese Character Count:14</h2>
+                            <h2 style="max-width: 500px;">Korean Character Count: 2</h2>
+                            <h2 style="max-width: 500px;">English Word Count:4</h2>
+                            <h2 style="max-width: 500px;">Total Count:20</h2>
+                            <h2 style="max-width: 500px;">Type of Goods:Car Parts</h2>
+                        </span>
                     </div>
-                <!-- <div class="tooltip">Hover over me
-                    <span class="tooltiptext">Tooltip text</span>
-                </div> -->
+                    <img src="img/2024ISP_01 justsign.png" style="max-height: 600px;">
+                  </div>
                 </div>
-            <!-- <div class="year2018">
-                <h4>2018</h4>
-                <div class="tooltip">Hover over me
-                    <span class="tooltiptext">Tooltip text</span>
+                
+            <button class="accordion">2018</button>
+                <div class="panel">
+                    <div class="scroll">
+                        <img src="img/2024ISP_09_justsigns.png" style="max-height: 600px;">
+                    </div>
                 </div>
-            </div>
-            <div class="year2016">
-                <h4>2016</h4>
-                <div class="tooltip">Hover over me
-                    <span class="tooltiptext">Tooltip text</span>
+                
+            <button class="accordion">2016</button>
+                <div class="panel">
+                    <div class="scroll">
+                        <img src="img/2024ISP_08_justsign.png" style="max-height: 600px;">
+                    </div>
                 </div>
-            </div>
-            <div class="year2014">
-                <h4>2014</h4>
-                <div class="tooltip">Hover over me
-                    <span class="tooltiptext">Tooltip text</span>
+            <button class="accordion">2014</button>
+                <div class="panel">
+                    <div class="scroll">
+                        <img src="img/2024ISP_09_justsigns.png" style="max-height: 600px;">
+                    </div>
                 </div>
-            </div> -->
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+            </script>
         </div>
-        <div class="images">
-            <div class="accordian">
-                <input type="checkbox" id="trigger"/>
-                <label for="trigger">2018</label>
-                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-                <div class="container">
-                        <img src="img/2024ISP_01 justsign.png" style="max-height: 1200px;">
-                        <img src="img/2024ISP_08_justsign.png" style="max-height: 700px; padding-top: 230px;">
-                        <img src="img/2024ISP_09_justsigns.png" style="max-height: 700px; padding-top: 350px;">
-                </div>
-            </div>
-        </div>
-        <div class="images">
-            <div class="accordian">
-                <input type="checkbox" id="trigger"/>
-                <label for="trigger">2016</label>
-                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-                <div class="container">
-                        <img src="img/2024ISP_01 justsign.png" style="max-height: 1200px;">
-                        <img src="img/2024ISP_08_justsign.png" style="max-height: 700px; padding-top: 230px;">
-                        <img src="img/2024ISP_09_justsigns.png" style="max-height: 700px; padding-top: 350px;">
-                </div>
-            </div>
-        </div>
-        <div class="images">
-            <div class="accordian">
-                <input type="checkbox" id="trigger"/>
-                <label for="trigger">2014</label>
-                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-                <div class="container">
-                        <img src="img/2024ISP_01 justsign.png" style="max-height: 1200px;">
-                        <img src="img/2024ISP_08_justsign.png" style="max-height: 700px; padding-top: 230px;">
-                        <img src="img/2024ISP_09_justsigns.png" style="max-height: 700px; padding-top: 350px;">
-                </div>
-            </div>
-        </div>
-        </div>
+        <!-- <div class="filterDiv cars">BMW</div>
+            <div class="filterDiv colors fruits">Orange</div>
+            <div class="filterDiv cars">Volvo</div>
+            <div class="filterDiv colors">Red</div>
+            <div class="filterDiv cars">Ford</div>
+            <div class="filterDiv colors">Blue</div>
+            <div class="filterDiv animals">Cat</div>
+            <div class="filterDiv animals">Dog</div>
+            <div class="filterDiv fruits">Melon</div>
+            <div class="filterDiv fruits animals">Kiwi</div>
+            <div class="filterDiv fruits">Banana</div>
+            <div class="filterDiv fruits">Lemon</div>
+            <div class="filterDiv animals">Cow</div> -->
   </body>
 </html>
