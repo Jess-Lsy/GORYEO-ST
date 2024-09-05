@@ -1,4 +1,4 @@
-# A Panoramic View of Goryeo St
+# Panoramic Views of Goryeo St
 This project documents the evolution of multilingual signage within the border
 city of Dandong, China. Within the confined sample area of GORYEO ST, these
 signs are read by an audience that handles about a quarter of North Korea’s
